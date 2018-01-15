@@ -1,0 +1,163 @@
+.hide {
+  display: none;
+}
+
+
+.wrapBody {
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.bg {
+	position: absolute;
+	top:0;
+	left: 0;
+  background: no-repeat;
+  background-size: 100% auto;
+}
+
+
+
+.wrap {
+	height: 100%;
+	width: 100%;
+	background-color: rgb(41, 41, 41);
+	.closeBtn {
+		position: absolute;
+		top: .2rem;
+		right: .2rem;
+		width: .5rem;
+		height: .4rem;
+		background: url('./../images/close.jpg') no-repeat;
+		background-size: 100%;
+	}
+	>.content {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -2.35rem;
+		margin-top: .75rem;
+		width: 4.69rem;
+		height: 4.44rem;
+		background: url('./../images/man.png') no-repeat;
+		background-size: 100% auto;
+	}
+	.signBtn {
+		position: absolute;
+		top: 6.8rem;
+		left: 50%;
+		width: 2.15rem;
+		height: .6rem;
+		margin-left: -1.075rem;
+		background: url('./../images/btn.jpg') no-repeat;
+		background-size: 100% 100%;
+	}
+	.detialBtn {
+		position: absolute;
+		top: 1.5rem;
+		left: 50%;
+		width: .4rem;
+		height: 1.22rem;
+		margin-left: 1.6rem;
+		background: url('./../images/detailBtn.png') no-repeat;
+		background-size: 100% 100%;
+	}
+}
+
+
+.popBox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(94, 94, 94);
+	z-index: 99;
+  -moz-opacity:0.9;
+  -khtml-opacity: 0.9;
+  opacity: 0.9;
+	filter: opacity(.9);
+	.contentBox {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		margin-top: -0.75rem;
+		margin-left: -1.8rem;
+		width: 3.6rem;
+		text-align: center;
+		word-wrap:break-word;
+		border-radius: .3rem;
+		background-color: black;
+		#popMsg {
+			filter: opacity(1);
+			display: inline-block;
+			word-wrap:break-word;
+			margin: .4rem .3rem;
+			font-size: .28rem;
+			color: white;
+		}
+	}
+}
+
+.popWrap {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	visibility: hidden;
+	.popSuccess {
+		filter: opacity(1);
+		z-index: 999;
+		position: absolute;
+		top: 2.8rem;
+		left: 50%;
+		width: 3.78rem;
+		height: 2.45rem;
+		margin-left: -1.89rem;
+		background: url('./../images/pop-success.png') no-repeat;
+		background-size: 100% 100%;
+		visibility: hidden;
+		.popCloseBtn {
+			z-index: 999;
+			position: absolute;
+			top: .35rem;
+			right: .09rem;
+			width: .35rem;
+			height: .35rem;
+		}
+	}
+	.popDetail {
+		z-index: 999;
+		position: absolute;
+		top: 2.8rem;
+		left: 50%;
+		width: 4.22rem;
+		height: 3.1rem;
+		margin-left: -2.11rem;
+		background: url('./../images/popDetail.png') no-repeat;
+		background-size: 100% 100%;
+		visibility: hidden;
+		.popCloseBtn {
+			z-index: 999;
+			position: absolute;
+			top: .26rem;
+			right: .2rem;
+			width: .35rem;
+			height: .35rem;
+		}
+	}
+	.pop {
+		>div {
+			filter: opacity(1);
+			z-index: 999;
+			position: relative;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
